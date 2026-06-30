@@ -1,159 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <title>Registration</title>
-</head>
-<body>
-
-<h1>Registration</h1>
-
-<table>
-  <tr valign="top">
-
-   
-    <td>
-      <fieldset>
-        <legend><b>General Information:</b></legend>
+<!doctype html>
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <body>
+        <h1>Registration</h1>
         <table>
-          <tr>
-            <td>First Name :</td>
-            <td><input type="text" name="firstname"></td>
-          </tr>
-          <tr>
-            <td>Last Name :</td>
-            <td><input type="text" name="lastname"></td>
-          </tr>
-          <tr>
-            <td>Gender :</td>
-            <td>
-              <input type="radio" name="gender" value="male"> Male
-              <input type="radio" name="gender" value="female"> Female
-            </td>
-          </tr>
-          <tr>
-            <td>Father's Name :</td>
-            <td>
-              <input type="text" name="fathername">
-              <input type="file" name="photo">
-            </td>
-          </tr>
-          <tr>
-            <td>Mother's Name :</td>
-            <td><input type="text" name="mothername"></td>
-          </tr>
-          <tr>
-            <td>Blood Group :</td>
-            <td>
-              <select name="bloodgroup">
-                <option>A+</option>
-                <option>A-</option>
-                <option>B+</option>
-                <option>B-</option>
-                <option>O+</option>
-                <option>O-</option>
-                <option>AB+</option>
-                <option>AB-</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>Religion :</td>
-            <td>
-              <select name="religion">
-                <option>Islam</option>
-                <option>Hindu</option>
-                <option>Christian</option>
-                <option>Buddhist</option>
-                <option>Other</option>
-              </select>
-            </td>
-          </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>General Information</legend>
+                        <table cellpadding="12">
+                            <tr>
+                                <td><b>First Name</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="text" name="fname" id="fname"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Last Name</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="text" name="lname" id="lname"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Gender</b></td>
+                                <td><b>:</b></td>
+                                <td >Male
+                                   <input type="radio" name="gender" value="male">
+                                   Female
+                                   <input type="radio" name="gender" value="female">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Father's Name</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="text" name="faname" id="faname"></td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Mother's Name</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="text" name="maname" id="maname"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Blood Group</b></td>
+                                <td><b>:</b></td>
+                                <td>
+                                    <select name="bloodgroup">
+                                      <option>Select Blood Group</option>
+                                      <option>A+</option>
+                                      <option>A-</option>
+                                      <option>B+</option>
+                                      <option>B-</option>
+                                      <option>O+</option>
+                                      <option>O-</option>
+                                      <option>AB+</option>
+                                      <option>AB-</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Religion</b></td>
+                                <td><b>:</b></td>
+                                <td>
+                                    <select name="religion">
+                                      <option>Select Your Religion</option>
+                                      <option>Islam</option>
+                                      <option>Hindu</option>
+                                      <option>Christan</option>
+                                      <option>Buddhist</option>
+                                      <option>Other</option>
+                                    </select>
+                                </td>
+                            </tr>
+                       
+                        </table>
+                    </fieldset>
+                </td>
+
+                <td>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <table cellpadding="7">
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="email" name="email" id="email"></td> 
+                            </tr>
+                            <tr>
+                                <td><b>Phone/Mobile</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="tel" name="phone" id="phone"></td> 
+                            </tr>
+                            <tr>
+                                <td><b>Website</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="text" name="website" id="website"></td> 
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td colspan="2"><b>Present Address</b></td>
+                        
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2">
+                                  <select name="country">
+                                      <option>Bangladesh</option>
+                                      <option>India</option>
+                                      <option>USA</option>
+                                  </select>
+                                  <select name="city">
+                                  <option>Dhaka</option>
+                                  <option>Kalkata</option>
+                                  <option>NewYork</option>
+                                  </select>
+                                 </td>
+                          </tr>
+                          <tr>
+                            <td><b>Address</b></td>
+                            <td><b>:</b></td>
+                            <td><textarea name="address" rows="4" cols="25" placeholder="Road/Street/City"></textarea></td>
+                          </tr>
+                          <tr>
+                            <td><td><td><input type="text" name="postcode" placeholder="Post Code"></td>
+                          </tr>
+                          
+                          
+                        
+                        </table>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <table cellpadding="25">
+                           <tr>
+                                <td><b>Username</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="text" name="username" id="username"></td> 
+                            </tr> 
+                            <tr>
+                                <td><b>Password</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="password" name="password" id="password"></td> 
+                            </tr>
+                            <tr>
+                                <td><b>Confirm Password</b></td>
+                                <td><b>:</b></td>
+                                <td><input type="Password" name="cpassword" id="cpassword"></td> 
+                            </tr>
+                        </table>
+                    </fieldset>
+                   <br><br> <input type="submit" value="Register">
+                </td>
+            </tr>
         </table>
-      </fieldset>
-    </td>
-
-    <td width="30"></td>
-
-  
-    <td>
-      <fieldset>
-        <legend><b>Contact Information:</b></legend>
-        <table>
-          <tr>
-            <td>Email :</td>
-            <td><input type="text" name="email"></td>
-          </tr>
-          <tr>
-            <td>Phone/Mobile :</td>
-            <td><input type="text" name="phone"></td>
-          </tr>
-          <tr>
-            <td>Website :</td>
-            <td><input type="text" name="website"></td>
-          </tr>
-          <tr>
-            <td colspan="2"><b>Present Address:</b></td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <select name="country">
-                <option>Bangladesh</option>
-                <option>India</option>
-                <option>USA</option>
-              </select>
-              <select name="city">
-                <option>Dhaka</option>
-                <option>Chittagong</option>
-                <option>Sylhet</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>Address :</td>
-            <td>
-              <textarea name="address" rows="4" cols="25"
-              placeholder="Road/Street/City"></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <input type="text" name="postcode" placeholder="Post Code">
-            </td>
-          </tr>
-        </table>
-      </fieldset>
-    </td>
-
-    <td width="30"></td>
-
-   
-    <td>
-      <fieldset>
-        <legend><b>Account Information:</b></legend>
-        <table>
-          <tr>
-            <td>Username :</td>
-            <td><input type="text" name="username"></td>
-          </tr>
-          <tr>
-            <td>Password :</td>
-            <td><input type="password" name="password"></td>
-          </tr>
-          <tr>
-            <td>Confirm Password :</td>
-            <td><input type="password" name="confirm_password"></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><input type="submit" value="Register"></td>
-          </tr>
-        </table>
-      </fieldset>
-    </td>
-
-  </tr>
-</table>
-
-</body>
+    </body>
 </html>
